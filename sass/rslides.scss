@@ -1,0 +1,55 @@
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  }
+
+.rslides1_nav {
+  position: absolute;
+  top: 75%;
+  width: 40px;
+  height: 40px;
+
+  @media screen and (max-width:596px) {
+    display: none;
+  }
+}
+
+  .prev {
+    left: 2.5%;
+    background: url('../img/arrow-left.svg') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .next {
+    right: 2.5%;
+    background: url('../img/arrow-right.svg') no-repeat;
+    background-size: 100% 100%;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
